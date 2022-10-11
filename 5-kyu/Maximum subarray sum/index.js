@@ -26,22 +26,7 @@
 
 // Long Solution
 function maxSequence(array) {
-  const allPositive = array.every(number => Math.sign(number) === 1)
-  const allNegative = array.every(number => Math.sign(number) === -1)
-
-  if (allPositive) return array.reduce((a, b) => a + b, 0)
-  if (allNegative || array.length === 0) return 0
-
-  const combinations = []
-
-  for (let i = 0; i < array.length; i++) {
-    const sublist = array.map((number, ind) => array.slice(ind, ind + i))
-    combinations.push(...sublist)
-  }
-
-  const result = combinations.map(numbers => numbers.reduce((a, b) => a + b, 0))
-
-  return Math.max(...result)
+  
 }
 
 // Function Export

@@ -16,10 +16,7 @@
 */
 
 function moveZeros(array) {
-  const arrayWithZeros = array.filter(number => number === 0)
-  const arrayWithoutZeros = array.filter(number => number !== 0)
-
-  return [...arrayWithoutZeros, ...arrayWithZeros]
+  
 }
 
 // Function Export

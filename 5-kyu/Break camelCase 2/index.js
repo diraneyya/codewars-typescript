@@ -22,14 +22,10 @@
     https://www.codewars.com/kata/break-camelcase/solutions
 */
 
-String.prototype.camelCase = function() {
-  return this.split(' ')
-    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-    .join('')
-}
-*/
-
 // write the camelCase function here
+const camelCase = function () {
+
+}
 
 // Function Export
-// module.exports = your function
+// module.exports = camelCase

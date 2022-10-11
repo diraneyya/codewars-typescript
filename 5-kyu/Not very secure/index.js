@@ -28,7 +28,7 @@ function alphanumeric(string) {
 */
 
 // Short Solution
-const alphanumeric = string => /^[a-z\d]+$/gi.test(string)
+const alphanumeric = string => ''
 
 // Function Export
 module.exports = alphanumeric

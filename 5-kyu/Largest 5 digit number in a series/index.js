@@ -26,16 +26,7 @@
 */
 
 function solution(digits) {
-  let fiveDigitsNumbers = []
-  const digitsArray = digits.split('')
-
-  digitsArray.forEach((number, index) => {
-    if (index + 5 > digitsArray.length) return
-    const fiveDigitNumber = digitsArray.slice(index, index + 5).join('')
-    fiveDigitsNumbers = [...fiveDigitsNumbers, fiveDigitNumber]
-  })
-
-  return Math.max(...fiveDigitsNumbers)
+  
 }
 
 // Function Export

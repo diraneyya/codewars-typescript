@@ -36,61 +36,7 @@
 
 // Long Solution
 function score(dice) {
-  const result = [
-    {
-      value: 1,
-      repetitions: 0,
-      singlePoints: 100,
-      triplePoints: 1000,
-    },
-    {
-      value: 2,
-      repetitions: 0,
-      singlePoints: 0,
-      triplePoints: 200,
-    },
-    {
-      value: 3,
-      repetitions: 0,
-      singlePoints: 0,
-      triplePoints: 300,
-    },
-    {
-      value: 4,
-      repetitions: 0,
-      singlePoints: 0,
-      triplePoints: 400,
-    },
-    {
-      value: 5,
-      repetitions: 0,
-      singlePoints: 50,
-      triplePoints: 500,
-    },
-    {
-      value: 6,
-      repetitions: 0,
-      singlePoints: 0,
-      triplePoints: 600,
-    },
-  ]
-
-  dice.forEach(die => {
-    result[die - 1].repetitions += 1
-  })
-
-  const totalPoints = result
-    .map(die => {
-      if (die.repetitions > 3)
-        return die.triplePoints + die.singlePoints * die.repetitions
-
-      if (die.repetitions === 3) return die.triplePoints
-
-      return die.singlePoints * die.repetitions
-    })
-    .reduce((total, value) => total + value, 0)
-
-  return totalPoints
+  return null;
 }
 
 // Function Export

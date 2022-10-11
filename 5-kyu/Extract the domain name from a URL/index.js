@@ -19,19 +19,8 @@
     https://www.codewars.com/kata/extract-the-domain-name-from-a-url-1/solutions
 */
 
-// Long Solution
-/*
-function domainName(url) {
-  return url
-    .replace('http://', '')
-    .replace('https://', '')
-    .replace('www.', '')
-    .split('.')[0]
-}
-*/
-
 // Short Solution
-const domainName = url => url.replace(/.+\/\/|www.|\..+/g, '')
+const domainName = url => null;
 
 // Function Export
 module.exports = domainName

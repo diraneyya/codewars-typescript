@@ -20,10 +20,17 @@
 // camelCase      ---> camel Case
 
 const breakCamelCase = function (param) {
-  const dividedString = param.split("").map((el)=>
-    el === el.toUpperCase()? ` ${el}` : el ).join("")
-    
-  return dividedString;
+  
+  let result = '';
+  for (let i = 0; i < param.length; i++) {
+      if (!(param)) {
+        result += ' ';
+      }
+
+      result += param[i];
+  }
+
+  return result;
 }  
 
  
