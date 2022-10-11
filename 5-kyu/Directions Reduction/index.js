@@ -1,3 +1,4 @@
+"use strict";
 /*
   Title:
     Directions Reduction
@@ -43,10 +44,8 @@
   Solutions Link:
     https://www.codewars.com/kata/directions-reduction/solutions
 */
-
 function dirReduc(array) {
-  
 }
- 
 // Function Export
-module.exports = dirReduc
+module.exports = dirReduc;
+//# sourceMappingURL=index.js.map

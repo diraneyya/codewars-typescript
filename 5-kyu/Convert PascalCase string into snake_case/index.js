@@ -1,3 +1,4 @@
+"use strict";
 /*
   Title:
     Convert PascalCase string into snake_case
@@ -29,11 +30,8 @@
   Solutions Link:
     https://www.codewars.com/kata/convert-pascalcase-string-into-snake-case/solutions
 */
-
-
 const toUnderscore = param => null;
-
 // Regex -> https://regexr.com/3ib8o
-
 // Function Export
-module.exports = toUnderscore
+module.exports = toUnderscore;
+//# sourceMappingURL=index.js.map

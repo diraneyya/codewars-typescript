@@ -1,3 +1,4 @@
+"use strict";
 /*
   Title:
     First non-repeating character
@@ -26,11 +27,9 @@
   Solutions Link:
     https://www.codewars.com/kata/first-non-repeating-character/solutions
 */
-
 // Short Solution
 const firstNonRepeatingLetter = s => {
-  
-}
-
+};
 // Function Export
-module.exports = firstNonRepeatingLetter
+module.exports = firstNonRepeatingLetter;
+//# sourceMappingURL=index.js.map

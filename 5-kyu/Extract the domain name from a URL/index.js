@@ -1,3 +1,4 @@
+"use strict";
 /*
   Title:
 
@@ -18,9 +19,8 @@
   Solutions Link:
     https://www.codewars.com/kata/extract-the-domain-name-from-a-url-1/solutions
 */
-
 // Short Solution
 const domainName = url => null;
-
 // Function Export
-module.exports = domainName
+module.exports = domainName;
+//# sourceMappingURL=index.js.map

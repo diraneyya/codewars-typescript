@@ -1,3 +1,4 @@
+"use strict";
 /*
   Title:
     Calculating with Functions
@@ -28,7 +29,6 @@
   Solutions Link:
     https://www.codewars.com/kata/calculating-with-functions/solutions
 */
-
 // Long Solution
 /*
   const zero = operation => (operation ? eval(`0 ${operation}`) : 0)
@@ -47,21 +47,6 @@
   const times = num => (num ? `* ${num}` : '*')
   const dividedBy = num => (num ? `/ ${num}` : '/')
 */
-
 // Function Export
-module.exports = {
-  zero,
-  one,
-  two,
-  three,
-  four,
-  five,
-  six,
-  seven,
-  eight,
-  nine,
-  plus,
-  minus,
-  times,
-  dividedBy,
-}
+module.exports = {};
+//# sourceMappingURL=index.js.map

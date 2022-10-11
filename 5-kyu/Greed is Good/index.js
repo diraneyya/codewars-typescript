@@ -1,3 +1,4 @@
+"use strict";
 /*
   Title:
     Greed is Good
@@ -33,11 +34,10 @@
   Solutions Link:
     https://www.codewars.com/kata/greed-is-good/solutions
 */
-
 // Long Solution
 function score(dice) {
-  return null;
+    return null;
 }
-
 // Function Export
-module.exports = score
+module.exports = score;
+//# sourceMappingURL=index.js.map

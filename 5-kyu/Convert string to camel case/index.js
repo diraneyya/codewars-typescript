@@ -1,3 +1,4 @@
+"use strict";
 /*
   Title:
     Convert string to camel case
@@ -21,9 +22,8 @@
   Solutions Link:
     https://www.codewars.com/kata/convert-string-to-camel-case/solutions
 */
-
 // Short Solution. Regex here => https://regexr.com/3gtji
 const toCamelCase = param => null;
-
 // Function Export
-module.exports = toCamelCase
+module.exports = toCamelCase;
+//# sourceMappingURL=index.js.map
