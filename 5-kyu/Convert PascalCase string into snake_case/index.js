@@ -30,30 +30,8 @@
     https://www.codewars.com/kata/convert-pascalcase-string-into-snake-case/solutions
 */
 
-// Long Solution
-/*
-function toUnderscore(string) {
-  if (typeof string !== 'string') return `${string}`
 
-  return string
-    .split('')
-    .map(
-      (char, ind) =>
-        char.match(/[a-z]/i) && char === char.toUpperCase() && ind !== 0
-          ? `_${char}`.toLowerCase()
-          : char.toLowerCase()
-    )
-    .join('')
-}
-*/
-
-// Short Solution
-const toUnderscore = string =>
-  string
-    .toString()
-    .split(/(?=[A-Z])/)
-    .join('_')
-    .toLowerCase()
+const toUnderscore = param => null;
 
 // Regex -> https://regexr.com/3ib8o
 

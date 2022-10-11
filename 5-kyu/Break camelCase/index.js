@@ -13,11 +13,23 @@
 
   Solutions Link:
     https://www.codewars.com/kata/zero-fill-dot-dot-dot-for-the-queen/solutions
-*/
- * const breakCamelCase = string => string.replace(/([A-Z])/g, ' $1')
- */
 
-const breakCamelCase = param => { }
+*/
+
+// orwaIsTeaching ---> orwa Is Teaching
+// camelCase      ---> camel Case
+
+const breakCamelCase = function (param) {
+  const dividedString = param.split("").map((el)=>
+    el === el.toUpperCase()? ` ${el}` : el ).join("")
+    
+  return dividedString;
+}  
+
+ 
+ 
+
+  
 
 // Function Export
 module.exports = breakCamelCase
