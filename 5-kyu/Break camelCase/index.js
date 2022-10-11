@@ -26,7 +26,11 @@ function breakCamelCase(string) {
 */
 
 // Short solution
-const breakCamelCase = string => string.replace(/([A-Z])/g, ' $1')
+/**
+ * const breakCamelCase = string => string.replace(/([A-Z])/g, ' $1')
+ */
+
+const breakCamelCase = param => { }
 
 // Function Export
 module.exports = breakCamelCase

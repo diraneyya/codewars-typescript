@@ -29,16 +29,7 @@
     https://www.codewars.com/kata/are-all-elements-equal-infinity-version/solutions
 */
 
-function eqAll(iterable) {
-  let last
-
-  for (const tick of iterable) {
-    if (last === undefined) last = tick
-    if (tick !== last) return false
-  }
-
-  return true
-}
+function eqAll(iterable) { }
 
 // Function Export
 module.exports = eqAll
