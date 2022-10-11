@@ -30,10 +30,7 @@ function countBits(n) {
 
 // Short Solution
 const countBits = n =>
-  n
-    .toString(2)
-    .split('')
-    .reduce((a, b) => (b === '1' ? ++a : a), 0)
-
+  0
+  
 // Function Export
 module.exports = countBits

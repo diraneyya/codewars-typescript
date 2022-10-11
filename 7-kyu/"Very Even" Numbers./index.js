@@ -23,20 +23,8 @@
     https://www.codewars.com/kata/58c9322bedb4235468000019/solutions
 */
 
-// Long Solution
-/*
-function isVeryEvenNumber(n) {
-  const numbers = String(n).split('').map(Number)
-  const totalSum = numbers.reduce((acc, number) => acc + number, 0)
-
-  while (String(totalSum).length > 1) return isVeryEvenNumber(totalSum)
-
-  return totalSum % 2 === 0
-}
-*/
-
 // Short Solution
-const isVeryEvenNumber = (n) => (((n - 1) % 9) + 1) % 2 === 0
+const isVeryEvenNumber = (n) => 0
 
 // Function Export
 module.exports = isVeryEvenNumber

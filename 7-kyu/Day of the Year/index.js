@@ -29,21 +29,12 @@
     https://www.codewars.com/kata/5a1ebe0d46d843454100004c/solutions
 */
 
-/* Long Solution
-const moment = require('moment')
 
-function toDayOfYear(arr) {
-  const [DD, MM, YYYY] = arr
-  const dayOfYear = moment(`${MM}-${DD}-${YYYY}`, 'MM-DD-YYYY').dayOfYear()
-
-  return dayOfYear
-}
-*/
 
 // Short Solution
 const moment = require('moment')
 
-const toDayOfYear = ([DD, MM, YYYY]) => moment(`${MM}-${DD}-${YYYY}`, 'MM-DD-YYYY').dayOfYear()
+const toDayOfYear = null;
 
 // Function Export
 module.exports = toDayOfYear

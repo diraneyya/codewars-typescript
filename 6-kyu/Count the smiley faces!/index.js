@@ -30,30 +30,6 @@
     https://www.codewars.com/kata/count-the-smiley-faces/solutions
 */
 
-// Long Solution
-/*
-function countSmileys(faces) {
-  if (faces.length === 0) return 0
-
-  const smiles = faces.filter(face => {
-    const parts = face.split('')
-    const hasEyes = parts[0].includes(':') || parts[0].includes(';')
-    const hasNose = parts[1].includes('-') || parts[1].includes('~')
-    const hasSmile = pos => parts[pos].includes(')') || parts[pos].includes('D')
-
-    if (parts.length === 2) {
-      if (hasEyes && hasSmile(1)) return face
-    }
-
-    if (parts.length === 3) {
-      if (hasEyes && hasNose && hasSmile(2)) return face
-    }
-  })
-
-  return smiles.length
-}
-*/
-
 /* Regex cheatsheet:
       / should be at the start and at the end of the regular expresion
       ^ marks the start of the string
@@ -63,7 +39,7 @@ function countSmileys(faces) {
 
 // Short Solution
 const countSmileys = faces =>
-  faces.filter(face => /^[:;][-~]?[)D]$/.test(face)).length
+  0
 
 // Function Export
 module.exports = countSmileys

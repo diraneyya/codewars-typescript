@@ -32,26 +32,9 @@
     https://www.codewars.com/kata/563b8a23b554206f49000059/solutions
 */
 
-// Long Solution
-/*
-const factorial = (n) => (n > 0 ? n * factorial(n - 1) : 1)
-
-const permutation = (total, sample) => factorial(total) / factorial(total - sample)
-
-function horses(totalHorses, totalWinners = 3) {
-  if (!Number.isInteger(totalHorses)) return undefined
-  if (totalHorses < totalWinners) return totalHorses
-
-  return permutation(totalHorses, totalWinners)
-}
-*/
 
 // Short Solution
 function horses(totalHorses, totalWinners = 3) {
-  if (!Number.isInteger(totalHorses)) return undefined
-  if (totalHorses < totalWinners) return totalHorses
-
-  return totalHorses * (totalHorses - 1) * (totalHorses - 2)
 }
 
 // Function Export

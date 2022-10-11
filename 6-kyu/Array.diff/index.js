@@ -46,7 +46,7 @@ function array_diff(a, b) {
 */
 
 // Short Solution
-const arrayDiff = (a, b) => a.filter(x => !b.includes(x))
+const arrayDiff = (a, b) => {}
 
 // Function Export
 module.exports = arrayDiff

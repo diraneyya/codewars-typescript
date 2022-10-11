@@ -32,14 +32,7 @@
 // Long Solution
 function findNb(m) {
   let summatory = 0
-  let n = 0
-
-  while (summatory < m) {
-    n++
-    summatory += n ** 3
-  }
-
-  return summatory === m ? n : -1
+  
 }
 
 // Function Export
