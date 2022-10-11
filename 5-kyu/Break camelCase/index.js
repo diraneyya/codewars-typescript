@@ -19,9 +19,9 @@
 // orwaIsTeaching ---> orwa Is Teaching
 // camelCase      ---> camel Case
 const breakCamelCase = function (param) {
-    let result = '';
+    let result = ''; //Did something
     for (let i = 0; i < param.length; i++) {
-        if (!(param)) {
+        if (param[i] === param[i].toUpperCase()) {
             result += ' ';
         }
         result += param[i];
