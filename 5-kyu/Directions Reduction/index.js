@@ -44,7 +44,7 @@
   Solutions Link:
     https://www.codewars.com/kata/directions-reduction/solutions
 */
-function dirReduc(array) {
+function dirReduc() {
 }
 // Function Export
 module.exports = dirReduc;

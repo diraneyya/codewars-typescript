@@ -20,7 +20,8 @@
     https://www.codewars.com/kata/extract-the-domain-name-from-a-url-1/solutions
 */
 // Short Solution
-const domainName = url => null;
+const domainName = function () {
+};
 // Function Export
 module.exports = domainName;
 //# sourceMappingURL=index.js.map

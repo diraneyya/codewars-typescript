@@ -23,7 +23,8 @@
     https://www.codewars.com/kata/convert-string-to-camel-case/solutions
 */
 // Short Solution. Regex here => https://regexr.com/3gtji
-const toCamelCase = param => null;
+const toCamelCase = function () {
+};
 // Function Export
 module.exports = toCamelCase;
 //# sourceMappingURL=index.js.map

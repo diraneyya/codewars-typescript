@@ -28,7 +28,7 @@
     https://www.codewars.com/kata/first-non-repeating-character/solutions
 */
 // Short Solution
-const firstNonRepeatingLetter = s => {
+const firstNonRepeatingLetter = function () {
 };
 // Function Export
 module.exports = firstNonRepeatingLetter;

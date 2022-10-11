@@ -29,24 +29,6 @@
   Solutions Link:
     https://www.codewars.com/kata/calculating-with-functions/solutions
 */
-// Long Solution
-/*
-  const zero = operation => (operation ? eval(`0 ${operation}`) : 0)
-  const one = operation => (operation ? eval(`1 ${operation}`) : 1)
-  const two = operation => (operation ? eval(`2 ${operation}`) : 2)
-  const three = operation => (operation ? eval(`3 ${operation}`) : 3)
-  const four = operation => (operation ? eval(`4 ${operation}`) : 4)
-  const five = operation => (operation ? eval(`5 ${operation}`) : 5)
-  const six = operation => (operation ? eval(`6 ${operation}`) : 6)
-  const seven = operation => (operation ? eval(`7 ${operation}`) : 7)
-  const eight = operation => (operation ? eval(`8 ${operation}`) : 8)
-  const nine = operation => (operation ? eval(`9 ${operation}`) : 9)
-
-  const plus = num => (num ? `+ ${num}` : '+')
-  const minus = num => (num ? `- ${num}` : '-')
-  const times = num => (num ? `* ${num}` : '*')
-  const dividedBy = num => (num ? `/ ${num}` : '/')
-*/
 // Function Export
 module.exports = {};
 //# sourceMappingURL=index.js.map

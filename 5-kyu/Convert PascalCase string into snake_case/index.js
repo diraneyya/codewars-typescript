@@ -30,7 +30,8 @@
   Solutions Link:
     https://www.codewars.com/kata/convert-pascalcase-string-into-snake-case/solutions
 */
-const toUnderscore = param => null;
+const toUnderscore = function () {
+};
 // Regex -> https://regexr.com/3ib8o
 // Function Export
 module.exports = toUnderscore;

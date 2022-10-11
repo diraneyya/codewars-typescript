@@ -35,8 +35,7 @@
     https://www.codewars.com/kata/greed-is-good/solutions
 */
 // Long Solution
-function score(dice) {
-    return null;
+function score() {
 }
 // Function Export
 module.exports = score;
