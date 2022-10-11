@@ -14,19 +14,6 @@
   Solutions Link:
     https://www.codewars.com/kata/zero-fill-dot-dot-dot-for-the-queen/solutions
 */
-
-// Long solution
-/*
-function breakCamelCase(string) {
-  return string
-    .split('')
-    .map(char => (char === char.toUpperCase() ? ` ${char}` : char))
-    .join('')
-}
-*/
-
-// Short solution
-/**
  * const breakCamelCase = string => string.replace(/([A-Z])/g, ' $1')
  */
 
