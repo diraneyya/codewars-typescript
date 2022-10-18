@@ -23,7 +23,9 @@
     https://www.codewars.com/kata/convert-string-to-camel-case/solutions
 */
 // Short Solution. Regex here => https://regexr.com/3gtji
-const toCamelCase = function () {
+const toCamelCase = function (param) {
+    let counter = 0;
+    return param.split(/[-_]/).map(e => (counter++ ? e.charAt(0).toUpperCase() : e.charAt(0)) + e.substring(1)).join('');
 };
 // Function Export
 module.exports = toCamelCase;
