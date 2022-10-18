@@ -1,4 +1,3 @@
-"use strict";
 /*
   Title:
     Convert string to camel case
@@ -22,13 +21,18 @@
   Solutions Link:
     https://www.codewars.com/kata/convert-string-to-camel-case/solutions
 */
+
 // Short Solution. Regex here => https://regexr.com/3gtji
-const toCamelCase = function (param) {
-    let counter = 0;
-    return param
-        .split(/[-_ ]/)
-        .map(e => (counter++ ? e.charAt(0).toUpperCase() : e.charAt(0)) + e.substring(1)).join('');
-};
+const toCamelCase = function (param : string) : string {
+  let counter = 0;
+  
+  return param
+    .split(/[-_ ]/)
+    .map( e => 
+        (counter++ ? e.charAt(0).toUpperCase() : e.charAt(0)) + e.substring(1)
+  ).join('');
+
+}
+
 // Function Export
-module.exports = toCamelCase;
-//# sourceMappingURL=index.js.map
+module.exports = toCamelCase
