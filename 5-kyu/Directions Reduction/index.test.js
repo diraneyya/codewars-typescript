@@ -3,7 +3,7 @@ const dirReduc = require('.')
 test('Test 1', () => {
   expect(
     dirReduc(['NORTH', 'SOUTH', 'SOUTH', 'EAST', 'WEST', 'NORTH', 'WEST'])
-  ).toEqual(['NORTH', 'SOUTH', 'WEST'])
+  ).toEqual(['WEST'])
 })
 
 test('Test 2', () => {
@@ -17,7 +17,11 @@ test('Test 2', () => {
 
 test('Test 3', () => {
   expect(dirReduc(['NORTH', 'SOUTH', 'EAST', 'WEST', 'EAST', 'WEST'])).toEqual([
-    'NORTH',
-    'SOUTH',
   ])
+})
+
+test('Test 4', () => {
+  expect(
+    dirReduc(['NORTH', 'NORTH', 'WEST', 'EAST', 'NORTH', 'EAST', 'WEST'])
+  ).toEqual(['NORTH', 'NORTH', 'NORTH'])
 })

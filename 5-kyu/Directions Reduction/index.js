@@ -44,7 +44,25 @@
   Solutions Link:
     https://www.codewars.com/kata/directions-reduction/solutions
 */
-function dirReduc() {
+function dirReduc(array) {
+    const value = {
+        WEST: 1,
+        EAST: -1,
+        SOUTH: 2,
+        NORTH: -2,
+    };
+    for (let i = 0; i < array.length;) {
+        const currentDirection = array[i];
+        const nextDirection = array[i + 1];
+        if (value[nextDirection] === -value[currentDirection]) {
+            array.splice(i, 2);
+            i = 0;
+        }
+        else {
+            i++;
+        }
+    }
+    return array;
 }
 // Function Export
 module.exports = dirReduc;
