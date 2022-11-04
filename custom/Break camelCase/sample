@@ -1,0 +1,15 @@
+const breakCamelCase = function (param) {
+  
+    let result = '';
+    for (let i = 0; i < param.length; i++) {
+        if (param[i] === param[i].toUpperCase()) {
+          result += ' ';
+        }
+  
+        result += param[i];
+    }
+  
+    return result;
+  }  
+
+  breakCamelCase("orwaIsHavingAGoodTime");
