@@ -20,7 +20,9 @@
 */
 // orwaIsTeaching ---> orwa Is Teaching
 // camelCase      ---> camel Case
-function breakCamelCase() {
+function breakCamelCase(word) {
+    return word.replace(/[A-Z]/g, ' $&');
+    // return word.replace(/([a-z])([A-Z])/g, "$1 $2")
 }
 module.exports = breakCamelCase;
 //# sourceMappingURL=index.js.map

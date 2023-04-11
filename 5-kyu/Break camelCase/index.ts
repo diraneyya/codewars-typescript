@@ -21,8 +21,14 @@
 // orwaIsTeaching ---> orwa Is Teaching
 // camelCase      ---> camel Case
 
-function breakCamelCase() {
+function breakCamelCase(word : string) :string {
+  return word.replace(/[A-Z]/g, ' $&')
 
+    // return word.replace(/([a-z])([A-Z])/g, "$1 $2")
 }
 
+
+
 module.exports = breakCamelCase;
+
+
