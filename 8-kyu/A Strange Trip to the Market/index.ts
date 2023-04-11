@@ -1,4 +1,3 @@
-"use strict";
 /*
   Title:
     A Strange Trip to the Market
@@ -25,8 +24,10 @@
   Solutions Link:
     https://www.codewars.com/kata/a-strange-trip-to-the-market/solutions
 */
+
 function isLockNessMonster() {
+  
 }
+
 // Function Export
-module.exports = isLockNessMonster;
-//# sourceMappingURL=index.js.map
+module.exports = isLockNessMonster

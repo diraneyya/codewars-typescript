@@ -1,4 +1,3 @@
-"use strict";
 /*
   Title:
     Guess The Gifts!
@@ -33,8 +32,10 @@
   Solutions Link:
     https://www.codewars.com/kata/guess-the-gifts/solutions
 */
+
 function guessGifts() {
+  
 }
+
 // Function Export
-module.exports = guessGifts;
-//# sourceMappingURL=index.js.map
+module.exports = guessGifts

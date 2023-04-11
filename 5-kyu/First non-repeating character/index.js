@@ -27,51 +27,8 @@
   Solutions Link:
     https://www.codewars.com/kata/first-non-repeating-character/solutions
 */
-// // Version 1 (based on Sveta/Manisha's work)
-// const firstNonRepeatingLetter = function (string) {
-//   const stringLower = string.toLowerCase();
-//   for (var i = 0; i < string.length; i++)
-//   {
-//     if (stringLower.indexOf(stringLower[i], stringLower.indexOf(stringLower[i]) + 1) == -1)
-//     {
-//       return string[i];
-//     }
-//   }
-//   return '';
-// }
-// // Version 2: Based on Alex's solution
-// const firstNonRepeatingLetter = function (str) {
-//   let newStr = str;
-//   for (let i = 0; i < str.length; i++) {
-//     for (let j = 0; j < str.length; j++) {
-//       if (i === j) {
-//         continue
-//       } else if (str[i].toUpperCase() === str[j].toUpperCase()) {
-//         newStr = newStr.replace(`${str[i]}`, '')
-//       }
-//     }
-//   }
-//   return newStr.length > 0 ? newStr[0] : '';
-// }
-// // Version 3: Based on Arkadii's
-// const firstNonRepeatingLetter = function (param) {
-//   try {
-//     param.split('').reduce((a, e) => {
-//       if (param.indexOf(e) === param.lastIndexOf(e)) throw e
-//     }, '')
-//   } catch (solution) {
-//     return solution
-//   }
-//   return ''
-// }
-// // Version 4: Arkadii's solution: does not work for case insensitive test cases
-// const firstNonRepeatingLetter = (param) =>
-//   param.split('').reduceRight((a, e) => (param.indexOf(e) === param.lastIndexOf(e) ? e : a), '')
-// // Version 4: Arkadii's solution: modified for case insensitive test cases
-// const firstNonRepeatingLetter = (param) =>
-//   param.split('').reduceRight((a, e) => ([...param.matchAll(RegExp(e, 'gi'))].length === 1 ? e : a), '');
-// // Version 4: Arkadii's solution: modified for case insensitive test cases
-const firstNonRepeatingLetter = (param) => param.split('').reduceRight((a, e1) => (param.split('').filter(e2 => e1.toLowerCase() === e2.toLowerCase())).length === 1 ? e1 : a, '');
+function firstNonRepeatingLetter() {
+}
 // Function Export
 module.exports = firstNonRepeatingLetter;
 //# sourceMappingURL=index.js.map

@@ -1,4 +1,3 @@
-"use strict";
 /*
   Title:
     101 Dalmatians - squash the bugs, not the dogs!
@@ -19,6 +18,7 @@
   Solutions Link:
     https://www.codewars.com/kata/101-dalmatians-squash-the-bugs-not-the-dogs/solutions
 */
+
 // Long Solution
 /*
 function howManyDalmatians(number) {
@@ -37,9 +37,11 @@ function howManyDalmatians(number) {
   return respond
 }
 */
+
 // Short Solution
 function howManyDalmatians() {
+
 }
+
 // Function Export
-module.exports = howManyDalmatians;
-//# sourceMappingURL=index.js.map
+module.exports = howManyDalmatians

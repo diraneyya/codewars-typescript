@@ -24,7 +24,9 @@
 */
 
 // Long Solution
-const addLength = string => string.split(' ').map(word => `${word} ${word.length}`)
+function addLength() {
+  
+}
 
 // Function Export
 module.exports = addLength

@@ -44,33 +44,7 @@
   Solutions Link:
     https://www.codewars.com/kata/directions-reduction/solutions
 */
-function dirReduc(array) {
-    // Define a value of the above type that is indexed with either a
-    // full or an abbreviated direction and returns the "value" of that
-    // Note that the value is just an abstraction where opposite directions
-    // have the same value but of the opposite sign.
-    const value = {
-        WEST: 1, W: 1,
-        EAST: -1, E: -1,
-        SOUTH: 2, S: 2,
-        NORTH: -2, N: -2,
-    };
-    // Define a variable to keep track of the array length as we are
-    // optimizing the direction array
-    let lastLength;
-    // Keep on assigning the length of the current array to lastLength
-    // and loop as long as this length have not reached zero.
-    while (lastLength = array.length)
-        // In every iteration, reduce the array using a single WEST/EAST
-        // or a SOUTH/NORTH optimization and see if the length had decreased
-        // If not, terminate the array.
-        if (lastLength === array.reduce((acc, _, i, a) => {
-            if (value[a[i]] === -value[a[i + 1]])
-                a.splice(i, 2);
-            return a;
-        }, [...array])
-            .length)
-            break;
+function dirReduc() {
 }
 // Function Export
 module.exports = dirReduc;

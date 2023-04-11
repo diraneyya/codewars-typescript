@@ -21,7 +21,7 @@
 */
 
 // Long Solution
-function humanReadable(seconds) {
+function humanReadable() {
   
 }
 

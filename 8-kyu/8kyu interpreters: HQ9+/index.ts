@@ -1,4 +1,3 @@
-"use strict";
 /*
   Title:
     8kyu interpreters: HQ9+
@@ -36,8 +35,10 @@
   Solutions Link:
     https://www.codewars.com/kata/8kyu-interpreters-hq9-plus/solutions
 */
+
 function hq9() {
+  
 }
+
 // Function Export
-module.exports = hq9;
-//# sourceMappingURL=index.js.map
+module.exports = hq9

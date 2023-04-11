@@ -36,6 +36,7 @@
 
 // Long Solution
 function score() {
+  
 }
 
 // Function Export

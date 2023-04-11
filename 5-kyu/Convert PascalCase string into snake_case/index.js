@@ -32,7 +32,6 @@
 */
 const toUnderscore = function () {
 };
-// Regex -> https://regexr.com/3ib8o
 // Function Export
 module.exports = toUnderscore;
 //# sourceMappingURL=index.js.map

@@ -31,27 +31,21 @@
     https://www.codewars.com/kata/calculating-with-functions/solutions
 */
 
-function apply(param : string) : number | string {
-  if (param.length >= 3) {
-    return eval(param)
-  } else return param
-}
+const one = () => {};
+const two = () => {};
+const three = () => {};
+const four = () => {};
+const five = () => {};
+const six = () => {};
+const seven = () => {};
+const eight = () => {};
+const nine = () => {};
+const zero = () => {};
 
-const one = (param = '') => apply(`1${param}`)
-const two = (param = '') => apply(`2${param}`)
-const three = (param = '') => apply(`3${param}`)
-const four = (param = '') => apply(`4${param}`)
-const five = (param = '') => apply(`5${param}`)
-const six = (param = '') => apply(`6${param}`)
-const seven = (param = '') => apply(`7${param}`)
-const eight = (param = '') => apply(`8${param}`)
-const nine = (param = '') => apply(`9${param}`)
-const zero = (param = '') => apply(`0${param}`)
-
-const times = (param : string) => `*${param}`
-const plus = (param : string) => `+${param}`
-const minus = (param : string) => `-${param}`
-const dividedBy = (param : string) => `/${param}`
+const times = () => {};
+const plus = () => {};
+const minus = () => {};
+const dividedBy = () => {};
 
 // Function Export
 module.exports = {

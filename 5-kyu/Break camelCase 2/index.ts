@@ -28,4 +28,4 @@ const camelCase = function () {
 }
 
 // Function Export
-// module.exports = camelCase
+module.exports = camelCase

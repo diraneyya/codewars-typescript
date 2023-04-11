@@ -1,4 +1,3 @@
-"use strict";
 /*
   Title:
     A Needle in the Haystack
@@ -28,8 +27,10 @@
   Solutions Link:
     https://www.codewars.com/kata/a-needle-in-the-haystack/solutions
 */
+
 function findNeedle() {
+
 }
+
 // Function Export
-module.exports = findNeedle;
-//# sourceMappingURL=index.js.map
+module.exports = findNeedle

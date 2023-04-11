@@ -7,6 +7,7 @@
     "email": "lndgalante@gmail.com"
   },
   "dependencies": {
+    "concurrently": "^8.0.1",
     "lodash": "^4.17.21",
     "moment": "^2.29.1",
     "ramda": "^0.27.1"
@@ -26,6 +27,7 @@
     "xo": "0.32.1"
   },
   "scripts": {
+    "start": "concurrently \"npm:*-watch\"",
     "lint": "xo",
     "test": "jest",
     "test-watch": "jest -o --watch",

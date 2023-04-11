@@ -1,4 +1,3 @@
-"use strict";
 /*
   Title:
     A function within a function
@@ -20,6 +19,7 @@
   Solutions Link:
     https://www.codewars.com/kata/a-function-within-a-function/solutions
 */
+
 // Long Solution
 /*
 function always(n) {
@@ -28,9 +28,11 @@ function always(n) {
   }
 }
 */
+
 // Short Solution
 function always() {
+  
 }
+
 // Function Export
-module.exports = always;
-//# sourceMappingURL=index.js.map
+module.exports = always

@@ -1,4 +1,3 @@
-"use strict";
 /*
   Title:
     Abbreviate a Two Word Name
@@ -24,8 +23,10 @@
   Solutions Link:
     https://www.codewars.com/kata/abbreviate-a-two-word-name/solutions
 */
+
 function abbrevName() {
+
 }
+
 // Function Export
-module.exports = abbrevName;
-//# sourceMappingURL=index.js.map
+module.exports = abbrevName
