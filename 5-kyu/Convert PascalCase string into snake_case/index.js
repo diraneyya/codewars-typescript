@@ -35,7 +35,7 @@
 const toUnderscore = function (example) {
     if (typeof example === 'number')
         return String(example);
-    return example.replace(/(.)([A-Z])/g, '$1_$2').toLowerCase();
+    return example.replace(/(?<!^)[A-Z]/g, '_$&').toLowerCase();
 };
 // Function Export
 module.exports = toUnderscore;
