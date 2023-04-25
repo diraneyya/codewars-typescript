@@ -44,9 +44,30 @@
     https://www.codewars.com/kata/directions-reduction/solutions
 */
 
-function dirReduc() {
-  
+type Directions = ("NORTH" | "SOUTH" | "WEST" | "EAST")[]
+
+
+function dirReduc(directions : Directions) : Directions {
+  let changed = true;
+  while (changed) {
+    changed = false
+    for (let i = 0; i < directions.length - 1; i++) {
+      if (
+        (directions[i] === 'NORTH' && directions[i + 1] === 'SOUTH') ||
+        (directions[i] === 'SOUTH' && directions[i + 1] === 'NORTH') ||
+        (directions[i] === 'EAST' && directions[i + 1] === 'WEST') ||
+        (directions[i] === 'WEST' && directions[i + 1] === 'EAST')
+      ) {
+        directions.splice(i, 2);
+        changed = true;
+      }
+    }
+  }
+
+  return directions
 }
 
 // Function Export
-module.exports = dirReduc;
+module.exports = dirReduc
+
+
