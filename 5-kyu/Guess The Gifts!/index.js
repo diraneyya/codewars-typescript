@@ -33,7 +33,23 @@
   Solutions Link:
     https://www.codewars.com/kata/guess-the-gifts/solutions
 */
-function guessGifts() {
+/*
+interface Present { size: string, clatters: string, weight: string}
+interface Wish extends Present { name: string }
+ */
+function guessGifts(wishList, presents) {
+    const possibleGifts = [];
+    for (let j = 0; j < wishList.length; j++) {
+        const wish = wishList[j];
+        for (let i = 0; i < presents.length; i++) {
+            const present = presents[i];
+            if (wish.size === present.size &&
+                wish.clatters === present.clatters &&
+                wish.weight === present.weight)
+                possibleGifts.push(wish.name);
+        }
+    }
+    return possibleGifts;
 }
 // Function Export
 module.exports = guessGifts;

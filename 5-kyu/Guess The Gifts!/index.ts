@@ -33,8 +33,43 @@
     https://www.codewars.com/kata/guess-the-gifts/solutions
 */
 
-function guessGifts() {
-  
+// Example
+//   guessGifts([
+//     { name: 'Mini Puzzle', size: 'small', clatters: 'yes', weight: 'light' },
+//     { name: 'Toy Car', size: 'medium', clatters: 'a bit', weight: 'medium' },
+//     { name: 'Card Game', size: 'small', clatters: 'no', weight: 'light' },
+//   ], [
+//     { size: 'medium', clatters: 'a bit', weight: 'medium' },
+//     { size: 'small', clatters: 'yes', weight: 'light' },
+//   ])
+//
+//   This should give ['Mini Puzzle', 'Toy Car']
+//
+
+type Present = { size: string; clatters: string; weight: string }
+type Wish = { name: string } & Present
+
+/*
+interface Present { size: string, clatters: string, weight: string}
+interface Wish extends Present { name: string }
+ */
+
+function guessGifts(wishList: Wish[], presents: Present[]) {
+  const possibleGifts: string[] = []
+
+  for (let j = 0; j < wishList.length; j++) {
+    const wish = wishList[j]
+    for (let i = 0; i < presents.length; i++) {
+      const present = presents[i]
+      if (
+        wish.size === present.size &&
+        wish.clatters === present.clatters &&
+        wish.weight === present.weight
+      )
+        possibleGifts.push(wish.name)
+    }
+  }
+  return possibleGifts
 }
 
 // Function Export
